@@ -67,3 +67,52 @@ x = ((10 - 5) * a) / b; // x = 2.5
 console.log(x);
 x = ((100 - 50) * a) / b; // x = 25
 console.log(x);
+// +	Addition
+// -	Subtraction
+// *	Multiplication
+// **	Exponentiation (ES2016)
+// /	Division
+// %	Modulus (Division Remainder)
+// ++	Increment
+// --	Decrement
+
+// Operators and Operands
+// The numbers (in an arithmetic operation) are called operands.
+// The operation (to be performed between the two operands) is defined by an operator.
+// assignment
+
+var a = 10;
+b = 15;
+a += 5; // a = a + 5;
+b -= 5; // b = b - 5;
+console.log(a, b);
+// =    |	x = y   |	x = y
+// +=	  | += y    |	x = x + y
+// -=   |	x -= y	| x = x - y
+// *=   |	x *= y	| x = x * y
+// /=   |	x /= y	| x = x / y
+// %=   |	x %= y	| x = x % y
+// **=  |	x **= y	| x = x ** y
+
+// ++ Data Type
+// JavaScript evaluates expressions from left to right. Different sequences can produce different results
+var num = 7;
+var pi = 3.14;
+var name = 'ashok';
+var ans = 'yes i am';
+var a = 12 + 4 + ' Volvo';
+console.log(a);
+
+// One Statement, Many Variables
+var person = 'John Doe',
+  carName = 'Volvo',
+  price = 200;
+
+// ++ Function
+var z = myFunction(6, 4);
+console.log(z);
+// function which performs a calculation and returns the result
+
+function myFunction(a, b) {
+  return a + b;
+}
