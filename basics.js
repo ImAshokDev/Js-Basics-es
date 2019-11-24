@@ -116,3 +116,22 @@ console.log(z);
 function myFunction(a, b) {
   return a + b;
 }
+
+// ++ Objects
+// Create an object:
+var car = {
+  // car is object name
+  type: 'Fiat',
+  model: '500',
+  color: 'white'
+};
+
+// Display some data from the object:
+console.log(
+  'The car type is: ' +
+    car.type +
+    ', car model is: ' +
+    car.model +
+    ', car color: ' +
+    car.color
+);
