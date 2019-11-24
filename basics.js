@@ -135,3 +135,22 @@ console.log(
     ', car color: ' +
     car.color
 );
+
+// ++ Events
+function displayDate() {
+  console.log(Date());
+}
+
+// ++ Strings
+var carName1 = 'Volvo XC60'; // Double quotes
+var carName2 = 'Volvo XC60'; // Single quotes
+console.log(carName1 + ' ' + carName2); //Strings are written inside quotes. You can use single or double quotes
+
+// ++ Strings Method
+var txt = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+console.log(txt.length); //The length property returns the length of a string
+
+// ++ String indexOf()
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf('locate');
+console.log(pos);
