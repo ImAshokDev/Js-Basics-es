@@ -548,3 +548,49 @@ function bin2dec(bin) {
   return parseInt(bin, 2).toString(10);
 }
 bin2dec();
+
+//Regular Expressions
+// Using String search() With a Regular Expression
+var str = 'Visit W3Schools!';
+var n = str.search(/w3Schools/i);
+console.log(n);
+
+//Error
+
+//Range Error
+var num = 1;
+try {
+  num.toPrecision(500);
+} catch (err) {
+  console.log(err.name);
+}
+
+//Reference Error
+var x;
+try {
+  x = y + 2; // y cannot be referenced (used)
+} catch (err) {
+  console.log(err.name);
+}
+
+//Syntax Error
+try {
+  eval("alert('Hello)");
+} catch (err) {
+  console.log(err.name);
+}
+
+//Type Error
+var num = 2;
+try {
+  num.toUpperCase();
+} catch (err) {
+  console.log(err.name);
+}
+
+//URI Error
+try {
+  decodeURI('%%%');
+} catch (err) {
+  console.log(err.name);
+}
