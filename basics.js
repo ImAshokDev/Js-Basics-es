@@ -679,6 +679,70 @@ console.log(hello(' Universe'));
 // Arrow function without Parentheses:
 
 var hello;
-hello = val => "Hello " + val;
-console.log(hello("galaxy!"));
+hello = val => 'Hello ' + val;
+console.log(hello('galaxy!'));
 
+// Best Practice
+// Never Declare Number, String, or Boolean Objects
+var x = 'Jhon'; // x is a string
+var y = new String('one'); // y is an object
+console.log(x === y);
+
+// Don't Use new Object()
+var x1 = {};
+var x2 = '';
+var x3 = 0;
+var x4 = false;
+var x5 = [];
+var x6 = /()/;
+var x7 = function() {};
+
+console.log(
+  'x1: ' +
+    typeof x1 +
+    ' ' +
+    'x2: ' +
+    typeof x2 +
+    ' ' +
+    'x3: ' +
+    typeof x3 +
+    ' ' +
+    'x4: ' +
+    typeof x4 +
+    ' ' +
+    'x5: ' +
+    typeof x5 +
+    ' ' +
+    'x6: ' +
+    typeof x6 +
+    ' ' +
+    'x7: ' +
+    typeof x7 +
+    ' '
+);
+
+// Mistake
+// Expecting Loose Comparison
+var x = 10;
+var y = '10';
+console.log(x == y);
+
+// Confusing Addition & Concatenation
+var x = 10 + ' 5';
+console.log(x);
+
+// Misunderstanding Floats
+var x = 0.1;
+var y = 0.2;
+var z = x + y;
+console.log(z);
+
+//JSON
+var text =
+  '{"employees":[' +
+  '{"firstName":"John","lastName":"Doe" },' +
+  '{"firstName":"Anna","lastName":"Smith" },' +
+  '{"firstName":"Peter","lastName":"Jones" }]}';
+
+obj = JSON.parse(text);
+console.log(obj.employees[1].firstName + ' ' + obj.employees[1].lastName);
