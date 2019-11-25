@@ -290,3 +290,8 @@ console.log(months[d.getMonth()]);
 var d = new Date(); //The setFullYear() method can optionally set month and day
 d.setFullYear(2019, 09, 22);
 console.log(d);
+
+// Math
+console.log(Math.PI);
+console.log(Math.pow(8, 2));
+console.log(Math.round(6.7));
