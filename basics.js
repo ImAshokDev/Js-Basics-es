@@ -230,3 +230,21 @@ console.log(
     ' ' +
     x.toExponential(6)
 );
+
+// ++ Array
+cars = ['saab', 'Volvo', 'BMW']; //array elements are accessed using numeric indexes (starting from 0)
+console.log(cars[0], cars[1]);
+console.log(cars); // Full array
+
+// ++ Array Methods
+var fruits = ['banana', 'orange', 'apple', 'Mango'];
+console.log(fruits.toString());
+
+//++Array Sorts
+function Fruits() {
+  var fru = ['Banana', 'Orange', 'Apple', 'Mango'];
+  console.log(fru);
+  fru.sort(); //The sort() method sorts an array alphabetically
+  console.log(fru);
+}
+Fruits(); //Fuction declared
