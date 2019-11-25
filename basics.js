@@ -295,3 +295,6 @@ console.log(d);
 console.log(Math.PI);
 console.log(Math.pow(8, 2));
 console.log(Math.round(6.7));
+
+// Random
+console.log(Math.floor(Math.random() * 11)); //Math.floor(Math.random() * 11) returns a random integer between 0 and 10 (both included)
