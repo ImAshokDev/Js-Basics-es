@@ -620,3 +620,17 @@ function myFAV() {
   carName = 'ferrari';
 }
 myFAV();
+
+//Hoisiting
+var x = 5; // Initialize x   (In JavaScript, a variable can be declared after it has been used.)
+var y = 7; // Initialize y
+console.log(x + ' ' + y);
+
+//Strc Mode
+x = 3.14; // This will not cause an error
+StrictFunc();
+
+function StrictFunc() {
+  'use strict';
+  y = 3.14; // This will cause an error (y is not defined).
+}
