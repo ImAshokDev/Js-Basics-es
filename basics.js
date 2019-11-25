@@ -151,6 +151,64 @@ var txt = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 console.log(txt.length); //The length property returns the length of a string
 
 // ++ String indexOf()
-var str = "Please locate where 'locate' occurs!";
+var str = "Please locate where 'locate' occurs!"; // indexof start with 0, 1, 2, 3, ......
 var pos = str.indexOf('locate');
 console.log(pos);
+console.log('Departed Train'.indexOf('Train')); //ans=9
+
+// ++ String lastIndexOf()
+var str = "Please locate where 'locate' occurs!";
+var pos = str.lastIndexOf('locate');
+console.log(pos);
+
+// ++ String searching
+var str = "Please locate where 'locate' occurs!";
+var pos = str.search('locate');
+console.log(pos);
+
+// string slice()
+var str = 'Apple, Banana, Kiwi';
+var res = str.slice(7, 13);
+console.log(res);
+
+// substring()
+var str = 'Apple, Banana, Kiwi';
+var res = str.substring(7, 13);
+console.log(res);
+
+// string substr()
+var str = 'Apple, Banana, Kiwi';
+var res = str.substr(7, 6);
+console.log(res);
+
+// string replace
+str = 'Please visit Microsoft!';
+var n = str.replace('Microsoft', 'W3Schools');
+console.log(n);
+
+// string toUpperCase()
+var text1 = 'Hello World!'; // String
+var text2 = text1.toUpperCase(); // text2 is text1 converted to upper
+console.log(text1, text2);
+
+//string tolower case
+var text1 = 'HELLO WORLD!'; // String
+var text2 = text1.toLowerCase(); // text2 is text1 converted to lower
+console.log(text2);
+
+//string concat
+var text1 = 'Hello';
+var text2 = 'World';
+var text3 = text1.concat(' ', text2);
+console.log(text3);
+
+//string.trim()
+function myFunction() {
+  var str = '     Hello World!     ';
+  console.log(str.trim());
+}
+myFunction();
+
+//string charAt()
+var str = 'HELLO WORLD';
+console.log(str.charAt(10));
