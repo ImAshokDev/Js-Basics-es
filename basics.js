@@ -512,3 +512,23 @@ function addFunc() {
   console.log(typeof y + '\n' + typeof x);
 }
 addFunc();
+
+//Bitewise
+
+//Bitewise(AND)
+console.log(5 & 1);
+
+//Bitewise(OR)
+console.log(5 | 1);
+
+//Bitewise(XOR)
+console.log(5 ^ 1);
+
+//Bitewise(NOT)
+console.log(~6);
+
+// Bitwise Left Shift (<<)
+console.log(5 << 1);
+
+// Bitwise Right Shift (<<)
+console.log(5 >> 1);
