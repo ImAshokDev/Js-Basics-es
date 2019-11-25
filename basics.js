@@ -452,3 +452,25 @@ do {
   i++;
 } while (i < 5);
 console.log(text);
+
+//Comparing for VS while loop
+
+// for
+var cars = ['BMW', 'Volvo', 'Saab', 'Ford'];
+var i = 0;
+var text = '';
+for (; cars[i]; ) {
+  text += cars[i] + '\n';
+  i++;
+}
+console.log(text);
+
+//while
+var cars = ['BMW', 'Volvo', 'Saab', 'Ford'];
+var i = 0;
+var text = '';
+while (cars[i]) {
+  text += cars[i] + '\n';
+  i++;
+}
+console.log(text);
