@@ -434,3 +434,21 @@ var x;
 for (x of txt) {
   console.log(x + ' ');
 }
+
+//While Loop
+var text = '';
+var i = 0;
+while (i < 3) {
+  text += ' The number is: ' + i;
+  i++;
+}
+console.log(text);
+
+//do-while loop
+var text = '';
+var i = 0;
+do {
+  text += ' The number is: ' + i;
+  i++;
+} while (i < 5);
+console.log(text);
