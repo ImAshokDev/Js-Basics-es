@@ -594,3 +594,12 @@ try {
 } catch (err) {
   console.log(err.name);
 }
+
+//Scope
+//Local JavaScript Variables
+function LocalVariable() {
+  var carName = 'Volvo';
+  console.log(typeof carName + ' ' + carName);
+}
+console.log(typeof carName);
+LocalVariable();
