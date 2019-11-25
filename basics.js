@@ -109,11 +109,11 @@ var person = 'John Doe',
   price = 200;
 
 // ++ Function
-var z = myFunction(6, 4);
+var z = Addition(6, 4);
 console.log(z);
 // function which performs a calculation and returns the result
 
-function myFunction(a, b) {
+function Addition(a, b) {
   return a + b;
 }
 
@@ -248,3 +248,14 @@ function Fruits() {
   console.log(fru);
 }
 Fruits(); //Fuction declared
+
+// Array Iteration
+// Calls a function once for each array element
+var txt = '';
+var numbers = [45, 4, 9, 16, 26];
+numbers.forEach(myArray);
+console.log(txt);
+
+function myArray(value, index, array) {
+  txt = txt + value + ' ';
+}
