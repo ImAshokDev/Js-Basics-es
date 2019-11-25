@@ -603,3 +603,20 @@ function LocalVariable() {
 }
 console.log(typeof carName);
 LocalVariable();
+
+// Global JavaScript Variables
+var carName = 'Hyundai';
+GlobalVariable();
+function GlobalVariable() {
+  console.log('i can Display ' + carName);
+}
+
+//Automatically global
+myFAV();
+// code here can use carName as a global variable
+console.log('I can display: ' + carName);
+
+function myFAV() {
+  carName = 'ferrari';
+}
+myFAV();
