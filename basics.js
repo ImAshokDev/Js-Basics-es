@@ -259,3 +259,34 @@ console.log(txt);
 function myArray(value, index, array) {
   txt = txt + value + ' ';
 }
+
+// Dates
+var d = new Date(2019, 09, 24, 10, 33, 30, 0); //Using new Date(7 numbers), creates a new date object with the specified date and time
+console.log(d);
+
+// Date Formates
+var d = new Date('2015-03'); // ISO Dates
+console.log(d);
+
+// Date Get Method
+var d = new Date(); //You can use an array to display the name of the month
+var months = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December'
+];
+console.log(months[d.getMonth()]);
+
+// ++ Date Set Method
+var d = new Date(); //The setFullYear() method can optionally set month and day
+d.setFullYear(2019, 09, 22);
+console.log(d);
