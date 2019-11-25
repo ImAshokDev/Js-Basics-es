@@ -375,3 +375,42 @@ switch (new Date().getDay()) {
     day = 'Saturday';
 }
 console.log(' Today is : ' + day);
+
+// Loop:
+
+//for Loop
+var cars = ['BMW', 'Volvo', 'saab', 'Ford'];
+var text = '';
+var i;
+for (i = 0; i < cars.length; i++) {
+  text += cars[i] + ' ';
+}
+console.log(text); //Loops are handy, if you want to run the same code over and over again, each time with a different value.
+
+//for Loop Statement1
+//Statement 1 is executed (one time) before the execution of the code block.
+var text = '';
+var i;
+for (i = 0; i < cars.length; i++) {
+  text += 'The number is ' + i + ' ';
+  b;
+}
+console.log(text);
+
+//Statement 2 defines the condition for executing the code block
+
+//  (If you omit statement 2, you must provide a break inside the loop.
+// Otherwise the loop will never end. This will crash your browser.)
+
+//Statement 3 increases a value (i++) each time the code block in the loop has been executed.
+
+var cars = ['bugatti', 'spyker', 'ferrari', 'lamborgani'];
+var i = 0;
+len = cars.length;
+var text = '';
+
+for (; i < len; ) {
+  text += cars[i] + ' ';
+  i++;
+}
+console.log(text);
