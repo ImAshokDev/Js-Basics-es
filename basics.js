@@ -634,3 +634,22 @@ function StrictFunc() {
   'use strict';
   y = 3.14; // This will cause an error (y is not defined).
 }
+
+// this in method
+// Create an object
+var person = {
+  fname: 'one',
+  lname: 'two',
+  id: 5566,
+  fullName: function() {
+    return this.fname + ' ' + this.lname+" "+this.id;
+  }
+};
+// Display data from the object:
+console.log(person.fullName());
+
+// this is Function
+console.log(javaFunc());
+function javaFunc(){
+  return this;
+}
