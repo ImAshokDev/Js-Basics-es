@@ -642,7 +642,7 @@ var person = {
   lname: 'two',
   id: 5566,
   fullName: function() {
-    return this.fname + ' ' + this.lname+" "+this.id;
+    return this.fname + ' ' + this.lname + ' ' + this.id;
   }
 };
 // Display data from the object:
@@ -650,6 +650,35 @@ console.log(person.fullName());
 
 // this is Function
 console.log(javaFunc());
-function javaFunc(){
+function javaFunc() {
   return this;
 }
+
+//Arrow Function
+//Before:
+var hello;
+
+hello = function() {
+  return 'Hello World!';
+};
+console.log(hello());
+
+// With Arrow Function
+var hello;
+
+hello = () => {
+  return 'Welcome!';
+};
+console.log(hello());
+
+// Arrow function with parameter
+var hello;
+hello = val => 'hello' + val;
+console.log(hello(' Universe'));
+
+// Arrow function without Parentheses:
+
+var hello;
+hello = val => "Hello " + val;
+console.log(hello("galaxy!"));
+
