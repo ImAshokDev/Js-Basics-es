@@ -333,3 +333,18 @@ function DateFun() {
   console.log(greeting);
 }
 DateFun();
+
+// Else if condition
+function ElseIfFunc() {
+  var greeting;
+  var time = new Date().getHours();
+  if (time < 10) {
+    greeting = 'Good morning ';
+  } else if (time < 15) {
+    greeting = 'Good day';
+  } else {
+    greeting = 'Good evening';
+  }
+  console.log(greeting);
+}
+ElseIfFunc();
