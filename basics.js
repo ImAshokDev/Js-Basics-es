@@ -314,3 +314,22 @@ function CompFunc() {
   console.log(voteable + ' to vote.');
 }
 CompFunc();
+
+// ++ Condition
+// If Condition
+if (new Date().getHours() < 18) {
+  console.log('Good Day');
+}
+
+//Else Condition
+function DateFun() {
+  var hour = new Date().getHours();
+  var greeting;
+  if (hour < 2) {
+    greeting = 'Good day';
+  } else {
+    greeting = 'Good morning';
+  }
+  console.log(greeting);
+}
+DateFun();
