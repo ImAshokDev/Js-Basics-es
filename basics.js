@@ -498,3 +498,17 @@ for (i = 0; i < 10; i++) {
   text += 'The number is: ' + i + '\n';
 }
 console.log(text);
+
+//Types of conversion
+
+//Number to String
+var x = 123;
+console.log(String(x) + ' ' + String(123) + ' ' + String(100 + 23));
+
+// Automatic type Conversion
+function addFunc() {
+  var y = '5';
+  var x = +y;
+  console.log(typeof y + '\n' + typeof x);
+}
+addFunc();
