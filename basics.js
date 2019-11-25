@@ -532,3 +532,19 @@ console.log(5 << 1);
 
 // Bitwise Right Shift (<<)
 console.log(5 >> 1);
+
+// Converting Decimal to Binary
+console.log(dec2bin(5));
+
+function dec2bin(dec) {
+  return (dec >>> 0).toString(2);
+}
+dec2bin();
+
+// Converting Binary to Decimal
+console.log(bin2dec(101));
+
+function bin2dec(bin) {
+  return parseInt(bin, 2).toString(10);
+}
+bin2dec();
