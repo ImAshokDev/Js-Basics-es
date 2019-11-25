@@ -212,3 +212,21 @@ myFunction();
 //string charAt()
 var str = 'HELLO WORLD';
 console.log(str.charAt(10));
+
+// ++ Number
+//Extra large or extra small numbers can be written with scientific (exponent) notation
+var x = 123e5;
+var y = 123e-5;
+console.log(x + '    ' + y);
+
+// ++ Numbers Method
+var x = 9.656; //The toExponential() method returns a string, with the number rounded and written using exponential notation
+console.log(
+  x.toExponential() +
+    ' ' +
+    x.toExponential(2) +
+    ' ' +
+    x.toExponential(4) +
+    ' ' +
+    x.toExponential(6)
+);
