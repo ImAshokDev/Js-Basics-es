@@ -414,3 +414,23 @@ for (; i < len; ) {
   i++;
 }
 console.log(text);
+
+// for-IN loop
+var txt = ''; //The for/in statement loops through the properties of an object
+var person = {
+  fname: 'one',
+  lname: 'two',
+  age: 22
+};
+var x;
+for (x in person) {
+  txt += person[x] + ' ';
+}
+console.log(txt);
+
+// for -Off loop(for over String)
+var txt = ' one';
+var x;
+for (x of txt) {
+  console.log(x + ' ');
+}
