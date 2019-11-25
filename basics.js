@@ -298,3 +298,19 @@ console.log(Math.round(6.7));
 
 // Random
 console.log(Math.floor(Math.random() * 11)); //Math.floor(Math.random() * 11) returns a random integer between 0 and 10 (both included)
+
+//Boolean
+function BooleanFunc() {
+  console.log(Boolean(10 > 9)); // display true or false
+  console.log(Boolean(10 < 9)); // display true or false
+}
+BooleanFunc();
+
+//Comparison
+function CompFunc() {
+  var age = 19,
+    voteable;
+  voteable = age < 18 ? 'Too young' : 'old enoungh';
+  console.log(voteable + ' to vote.');
+}
+CompFunc();
