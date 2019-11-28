@@ -82,3 +82,15 @@ console.log(iof);
 // Same as above but checks and returns other end of an array
 var lof = sports.lastIndexOf('football');
 console.log(lof);
+
+// ++ JSON.parse()
+// parse a json string that is like an object
+var jstring = '{"firstname": "khrist", "lastname": "yohan", "favnumber": 14}';
+var obj = JSON.parse(jstring);
+console.log(obj.firstname);
+console.log(obj.lastname);
+
+// ++ JSON.stringify()
+// converts an object to a json string
+var khj = JSON.stringify({ a: 3, y: 8 });
+console.log(khj);
