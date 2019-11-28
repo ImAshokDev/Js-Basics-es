@@ -198,3 +198,9 @@ console.log(people);
 
 // ++ Returns true if object is frozen
 // Object.isFrozen(object)
+
+// Syntactical Change
+// ++ Property access [ ] on strings
+var stracc = 'Hello khrish';
+console.log(stracc.charAt(0));
+console.log(stracc[0]);
