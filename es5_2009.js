@@ -94,3 +94,9 @@ console.log(obj.lastname);
 // converts an object to a json string
 var khj = JSON.stringify({ a: 3, y: 8 });
 console.log(khj);
+
+//Date now
+var date = Date.now();
+console.log(date);
+var currentDate = new Date();
+console.log(currentDate);
