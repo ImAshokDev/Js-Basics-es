@@ -58,3 +58,19 @@ function someFunc(x, y = 20) {
   return x + y;
 }
 console.log(someFunc(5));
+
+// ++ Array.find()
+// Returns value of first array element if it statisfies the function
+
+const numbers = [4, 9, 16, 30, 34];
+const first = numbers.find(function(value, index, array) {
+  return value > 18;
+});
+console.log(first);
+
+// ++ Array.findIndex()
+// Same as above but finds the index
+const firstInd = numbers.findIndex(function(value, index, array) {
+  return value > 18;
+});
+console.log(firstInd);
