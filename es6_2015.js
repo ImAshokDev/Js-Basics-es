@@ -17,3 +17,23 @@ console.log(c);
   console.log(c);
 }
 console.log(c);
+
+// ++ JavaScript Arrow Functions
+// ES5
+var es5 = function(x, y) {
+  return x * y;
+};
+console.log(es5(4, 5));
+
+//ES6
+const es6Cur = (x, y) => {
+  return x * y;
+};
+console.log(es6Cur(4, 5));
+
+const es6NCur = (x, y) => x * y; // omitting curly-braces returns automatically
+console.log(es6NCur(4, 5));
+
+// They don't have their own this, so not suited for defining object methods
+// Arrow function not hoisted coz, they must be defined b4 they are used
+// Using const than var is safe, coz function expression is always const
