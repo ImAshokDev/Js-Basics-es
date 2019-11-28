@@ -204,3 +204,33 @@ console.log(people);
 var stracc = 'Hello khrish';
 console.log(stracc.charAt(0));
 console.log(stracc[0]);
+
+// ++ Trailing commas in array and object literals
+// Object
+var comObj = {
+  firstName: 'Chaal',
+  lastName: 'Pritam',
+  num: 7
+};
+//Array
+var comArr = [1, 2, 4, 5];
+
+// JSON Object
+// Allowed
+var jsonObjA = '{"firstName":"Chaal", "lastName":"Pritam", "age":29}';
+JSON.parse(jsonObjA);
+// Not Allowed
+var jsonObjNA = '{"firstName":"Chaal", "lastName":"Pritam", "age":29,}';
+JSON.parse(jsonObjNA);
+// JSON Arrays
+// Allowed:
+var jsonArrA = [40, 100, 1, 5, 25, 10];
+// Not allowed:
+var jsonArrNA = [40, 100, 1, 5, 25, 10];
+
+// ++ Multiline string literals
+var slb = 'Hello  Chaal!'; // using backslash
+var sla = 'Hello ' + 'Chaal!'; // using plus operator
+
+// ++ Reserved words as property names
+var rswObj = { name: 'John', new: 'yes' };
