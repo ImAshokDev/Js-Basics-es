@@ -74,3 +74,42 @@ const firstInd = numbers.findIndex(function(value, index, array) {
   return value > 18;
 });
 console.log(firstInd);
+
+// ++ New Number Properties
+const df = Number.EPSILON;
+const dg = Number.MIN_SAFE_INTEGER;
+const dh = Number.MAX_SAFE_INTEGER;
+console.log(df);
+console.log(dg);
+console.log(dh);
+
+// New Number Methods
+// ++ Number.isInteger()
+const din = Number.isInteger(10);
+const dint = Number.isInteger(10.5);
+console.log(din);
+console.log(dint);
+
+// ++ Number.isSafeInteger()
+const sin = Number.isSafeInteger(10);
+const sint = Number.isSafeInteger(12345678901234567890);
+console.log(sin);
+console.log(sint);
+
+// New Global Methods
+// ++ isFinite()
+const sisf = isFinite(10 / 0); // returns false
+const sisfi = isFinite(10 / 1); // returns true
+console.log(sisf);
+console.log(sisfi);
+
+// ++ isNaN()
+const isN = isNaN('Hello');
+console.log(isN);
+
+// Exponentiation (**) (EcmaScript 2016)
+const xpo = 5;
+console.log(xpo ** 3);
+
+const exp = 5;
+console.log(Math.pow(exp, 3));
